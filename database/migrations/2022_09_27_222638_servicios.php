@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('servicios',function(Blueprint $table){
             $table->id();
             $table->string('Nombre_Servicio');
+            $table->date('Fecha');
+            $table->time('Hora');
             $table->longText('Ubicacion');
             $table->string('Encargado');
             $table->Integer('Cantida_Meseros');
