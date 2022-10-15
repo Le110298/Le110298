@@ -17,10 +17,22 @@ const app = createApp({});
 
 import Component from './components/Component.vue';
 app.component('Component', Component);
-import Nav from './components/str/nav.vue';
-app.component('Nav', Nav);
-import NewServ from './components/str/newserv.vue';
-app.component('NewServ', NewServ);
+import Reg from './components/str/reg.vue';
+app.component('Reg', Reg);
+import Reg_serv from './components/str/Reg_serv.vue';
+app.component('Reg_serv', Reg_serv);
+import Modal_serv from './components/str/model_mod_Ser.vue';
+app.component('Modal_serv', Modal_serv);
+import Footer from './components/str/footer.vue';
+app.component('Footer', Footer);
+import GRAFI from './components/str/grafi_don.vue';
+app.component('GRAFI', GRAFI);
+import Grafi_lin from './components/str/grafic_lin.vue';
+app.component('Grafi_lin', Grafi_lin);
+import Grafi_pol from './components/str/grafic_polar.vue';
+app.component('Grafi_pol', Grafi_pol);
+import Grafic from './components/Graficos.vue';
+app.component('Grafic', Grafic);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

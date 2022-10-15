@@ -1,7 +1,9 @@
 <template>
-    
-    <Nav />
-    <div class="container">
+  <!--<Reg_serv />-->
+  <!-- <modal_serv/>-->
+  <!-- <Reg/>-->
+  <!--
+ <div class="container">
         <div class="row">
             <div class="col-md-4"
             v-for="card in cards"
@@ -18,16 +20,26 @@
             </div>
         </div>
     </div>
+-->
+
+ <!-- <Footer />-->
+<Graficos/>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import Reg_serv from "./str/reg_serv.vue";
+import Reg_serv_copy from "./str/model_mod_Ser.vue";
+import Footer from "./str/footer.vue";
+import Grafi from "./str/grafi_don.vue";
+import Grafic_lin from "./str/grafic_lin.vue";
+import Graficos from "./Graficos.vue";
 
 const cards = ref([
   {
     title: "Añadir Nuevo Servicio",
     data: "En este apartado se mostrara un formulacion que te permitira anexar nuevos eventos",
-    href:"/add"
+    href: "/add"
   },
   {
     title: "Ver Servicios Registrados",
